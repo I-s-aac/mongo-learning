@@ -1,0 +1,12 @@
+GET http://localhost:3000/users/John
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John",
+  "role": "admin"
+}
+
+###
+GET http://localhost:3000/users
