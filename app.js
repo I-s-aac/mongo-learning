@@ -22,10 +22,14 @@ db.once("open", () => {
 });
 
 // schema for collection X with mongoose
-const User = mongoose.Schema({
-  name: String,
-  role: String,
+const User = new mongoose.Schema({
+  firstName: String,
+  lastName: String,
+  email: String,
+  password: String, // not going to use, but it would be encrypted before storing if it was used
   age: Number,
+  id: Number,
+
   createdAt: { type: Date, default: Date.now },
 });
 
